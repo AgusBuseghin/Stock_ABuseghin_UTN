@@ -1,9 +1,9 @@
-const Container=()=>{
+export const Container=({children})=>{
 
 return(
 
-<div>Container</div>
+<div>
+    {children}
+</div>
 
 )}
-
-export default Container

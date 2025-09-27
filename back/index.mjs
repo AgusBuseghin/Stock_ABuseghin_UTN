@@ -13,7 +13,15 @@ app.get('/', async (req, res) => {
 })
 
 app.post('/', async (req, res) => {
-    res.json(req.query)
+    const body = req.body
+    const product = new Product({
+        name: body.name,
+        price: Number(body.price),
+        stock: Number(body.stock)
+    })
+    console.log(product)
+    await product.save()
+    res.json("Producto cargado")
 })
 
 app.put('/', async (req, res) => {

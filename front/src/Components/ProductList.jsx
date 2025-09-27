@@ -1,4 +1,5 @@
 import {useState, useEffect} from "react"
+import {Container} from "./Container.jsx"
 
 
 const ProductList=()=>{
@@ -18,7 +19,7 @@ const ProductList=()=>{
 
 return(
 
-<div>ProductList</div>
+<div className="bg-black h-[715px] text-white">ProductList</div>
 
 )}
 
